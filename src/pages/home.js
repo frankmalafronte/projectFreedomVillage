@@ -93,7 +93,8 @@ export default function Home(props) {
         <Img style = {{width:'50%'}}fluid = {data.homeOutside.childImageSharp.fluid} />
         {/* <Img style = {{width:'30%'}}fluid = {data.greenhouse.childImageSharp.fluid} /> */}
         </div>
-        <div style={{display:'flex',justifyContent:'center'}}>
+        <div style={{display:'flex',justifyContent:'center',color:'rgb(220,41,49)', fontSize:'2.8vw'}}>
+        Sponsored By:
         </div>
         <div className ={styles.eventContainer}>
         <Img fluid = {data.horizontal.childImageSharp.fluid} />
