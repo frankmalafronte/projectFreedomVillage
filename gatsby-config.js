@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Tournament for the Boy`,
-    description: 'A charity tournament to benefit john paul malafronte',
+    title: `Project Freedom Villages`,
+    description: 'A charity to build tiny homes for Veterans',
     author: `Frank Malafronte`,
   },
   plugins: [
@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `The Boy`,
+        name: `Project Freedom Villages`,
         short_name: `starter`,
         start_url: `/`,
         // background_color: `#663399`,

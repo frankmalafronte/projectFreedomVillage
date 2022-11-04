@@ -14,9 +14,9 @@ import {MdMilitaryTech} from 'react-icons/md'
 export default function Home(props) {
   const data = useStaticQuery(graphql`
   query {
-    flier: file(relativePath: { eq: "flier.png" }) {
+    horizontal: file(relativePath: { eq: "sponsors/horizontal.png" }) {
       childImageSharp {
-        fluid(maxWidth:1200 maxHeight:800 fit:FILL cropFocus:CENTER ) {
+        fluid( maxWidth:3000 maxHeight:600 fit:FILL cropFocus:CENTER ) {
           ...GatsbyImageSharpFluid_withWebp
         }
         }
@@ -30,7 +30,7 @@ export default function Home(props) {
         }
         uniform: file(relativePath: { eq: "uniform.jpg" }) {
           childImageSharp {
-            fluid(maxWidth:800 maxHeight:800 fit:FILL cropFocus:NORTH ) {
+            fluid(maxWidth:1200 maxHeight:800 fit:FILL cropFocus:NORTH ) {
               ...GatsbyImageSharpFluid_withWebp
             }
             }
@@ -44,7 +44,7 @@ export default function Home(props) {
         }
           homeLayout: file(relativePath: { eq: "homeLayout.png" }) {
             childImageSharp {
-              fluid(maxWidth:800 maxHeight:800 fit:FILL cropFocus:CENTER ) {
+              fluid(maxWidth:1000 maxHeight:800 fit:FILL cropFocus:CENTER ) {
                 ...GatsbyImageSharpFluid_withWebp
               }
               }
@@ -61,7 +61,7 @@ export default function Home(props) {
   return (
     <body>
         <div className ={styles.eventContainer}>
-        <BackgroundImage style ={{width:'100%', height:'60vh'}}fluid = {data.uniform.childImageSharp.fluid}>
+        <BackgroundImage style ={{width:'100%', height:'40vh'}}fluid = {data.uniform.childImageSharp.fluid}>
         <div className={styles.heroTop2}>Project Freedom Village</div>
         </BackgroundImage>
         <div  className ={styles.eventDetails}>
@@ -79,22 +79,24 @@ export default function Home(props) {
         <div className={styles.subMission}>
         Now its time we serve them
         </div>
-        <div>
-        <Link to ="https://www.google.com"><button className={styles.donateButton}>
-          <MdMilitaryTech size="50px" />
-          Help Support Homes for our Veterans
-          <MdMilitaryTech size="50px"/>
+        <div  >
+        <MdMilitaryTech style= {{verticalAlign:'middle'}} color="rgb(0,53,145)" size="50px" />
+        <Link to ="https://app.fluidpay.com/checkout/3510f13d-ea57-410e-aa7c-2c1f43a2e399"><button className={styles.donateButton}>
+           Support Homes for our Veterans 
           </button></Link>
+          <MdMilitaryTech style= {{verticalAlign:'middle'}} color="rgb(0,53,145)" size="50px"/>
             </div>
+            <br/>
         </div>
-        {/* <div  style = {{display:'flex'}}>
-        <Img style = {{width:'33%'}} fluid= {data.homeLayout.childImageSharp.fluid}/>
-        <Img style = {{width:'33%'}}fluid = {data.homeOutside.childImageSharp.fluid} />
-        <Img style = {{width:'33%'}}fluid = {data.greenhouse.childImageSharp.fluid} />
-        </div> */}
-        <div style = {{display:'flex',justifyContent:'center'}}>
-        <Img  style = {{width:'66%'}}fluid = {data.flier.childImageSharp.fluid} />
-
+        <div  style = {{display:'flex'}}>
+        <Img style = {{width:'50%'}} fluid= {data.homeLayout.childImageSharp.fluid}/>
+        <Img style = {{width:'50%'}}fluid = {data.homeOutside.childImageSharp.fluid} />
+        {/* <Img style = {{width:'30%'}}fluid = {data.greenhouse.childImageSharp.fluid} /> */}
+        </div>
+        <div style={{display:'flex',justifyContent:'center'}}>
+        </div>
+        <div className ={styles.eventContainer}>
+        <Img fluid = {data.horizontal.childImageSharp.fluid} />
         </div>
         </div>
         <Footer/>

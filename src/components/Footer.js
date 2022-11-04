@@ -14,17 +14,16 @@ import {
 export default function Footer (){
     return (
       <div className ={styles.footerContainer}>
-      <div style = {{fontWeight:'bold', marginTop:'15px'}}>Connect With Us</div>
+      <div style = {{fontWeight:'bold', marginTop:'15px', color:'rgb(0,53,145)'}}>Connect With Us</div>
       <a href="https://www.instagram.com/bookwelltravel/?hl=en">
-    <FaFacebook  className ={styles.footerIcons} size="50px" color="black" />
+    <FaFacebook  className ={styles.footerIcons} size="50px" color="rgb(0,53,145)" />
     </a>
     <a href="https://facebook.com/pg/BookwellTravel/posts/">
-    <FaInstagram  className ={styles.footerIcons} size="50px" color="black" />
+    <FaInstagram  className ={styles.footerIcons} size="50px" color="rgb(0,53,145)" />
     </a>    
-     <a href="https://facebook.com/pg/BookwellTravel/posts/">
-    <FaPaypal  className ={styles.footerIcons} size="50px" color="black" />
-    </a>
-
+     {/* <a href="https://facebook.com/pg/BookwellTravel/posts/">
+    <FaPaypal  className ={styles.footerIcons} size="50px" color="rgb(0,53,145)" />
+    </a> */}
       </div>
     )
   }
