@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+html, body, #___gatsby {
+  height: 100%;
+}
+
+body {
+  display:flex;
+  flex-direction:column;
+  min-height: 100vh;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+.nav {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  padding-top: 1%;
+  z-index: 100;
+  background-color:white;
+  height:15vh;
+  flex-direction: column;
+  padding-bottom:45%;
+}
+
+.navLink {
+  font-size: 16px;
+  background-color:white;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  margin-top:10px;
+  text-decoration:none;
+  color:black;
+
+}
+
+.navLinks{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-end;
+  margin-top: 5%; 
+  align-items: center
+}
+
+.desktopNavWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width:150px;
+   height:100%;
+   margin-top: 5%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 33%;
+  /* max-width: 33%; */
+  width: 33%;
+  padding: 0 4px;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.donateButton {
+  color:white;
+  font-weight:bold;
+  background-color:rgb(238,113,98);
+  border:none;
+  border-radius: 8px;
+  font-size: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  padding: 16px; 
+  margin-top: 20px;
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  font-size: 125%;
+}
+.subTitle {
+  text-align: center;
+  flex-direction: column;
+  padding: 2px;
+  margin: 2px;
+  font-size: 110%;
+}
+
+.logoMobile {
+  width: 220px;
+}
+
+.heroTop {
+  font-size: 25pt;
+  /* display: flex;*/
+  /* padding-right: 5%; */
+  text-align: right;
+  color: white;
+  position: absolute;
+  text-shadow: 2px 2px 10px  #414141;
+  bottom: 5%;
+  right: 5%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom:1d0px;
+}
+
+.centerWrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: white;
+}
+
+.content {
+  flex: 1 0 auto; 
+}
+
+.footerContainer { 
+ display: flex;
+justify-content:center;
+align-items: flex-start; 
+flex-shrink:0;
+position: relative;
+}
+
+.footerIcons {
+  /* border:1px solid black; */
+  position: relative;
+  height:50px;
+  border-left:20px solid white;
+  border-right:20px solid white;
+
+}
+
+
+.centerPic {
+  width: 70%;
+}
+
+
+h1 {
+  justify-content: center;
+  margin-top: 50pt;
+  margin-bottom: 12pt;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20pt;
+  margin-bottom: 0pt;
+}
+
+h3 {
+  font-size: 14pt;
+}
+.eventContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.eventDetails{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom:10%;
+  font-size:14pt
+}
+
+.racebrookPic{
+  height:0;
+opacity: 0;
+width:0px
+}
+.racebrookButton {
+  color: teal
+}
+
+.eventTitle{
+  padding-top:10px;
+   padding-bottom:20px; 
+   font-weight:900;
+   font-size:150%;
+}
+
+.detail{
+  font-size:18px;
+}
+.subDetail{
+  font-size:14px
+}
+
+
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  #bio {
+    padding:20px;
+  }
+  
+  .eventContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .racebrookPic{
+    width:70%;
+    opacity:1;
+    height:80vh;
+  }
+
+  .eventDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .mission {
+    font-weight:900;
+    font-size:6vh;
+    margin-top:5%; 
+    color: rgb(0,53,145)
+  }
+  .subMission {
+    font-weight:900;
+    font-size:4vh;
+    color: rgb(220,41,49);
+  }
+
+  .detail{
+    padding-left: 20px;
+    font-size:30px;
+  }
+  .subDetail{
+    font-size:20px
+  }
+  .racebrookButton{
+    padding-left: 20px;
+    font-size:30px;
+    color:#3c2415;
+  }
+
+  .racebrookButton:hover {
+    text-decoration: underline;
+  }
+
+  h2 {
+    font-size: 24pt;
+  }
+
+  .logo {
+    width: 225px;
+  }
+
+  .heroTop {
+    font-size: 70pt;
+    /* display: flex;
+    padding-top: 10px; */
+    text-align: center;
+    color: white;
+    position: relative;
+    top:40px
+  }
+  .heroTop2 {
+    font-size: 50pt;
+    /* display: flex;
+    padding-top: 10px; */
+    text-align: right;
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+  }
+
+  .heroBottom {
+    font-size: 25pt;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-top:15px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color:white;
+    height:130px;
+    flex-direction: row;
+    padding-bottom:2%;
+  }
+
+  .navLink {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color:none;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    /* padding: 20px; */
+    margin-top: 30px;
+  }
+  .navLinks{
+    display:flex;
+    flex-direction: row;
+    width:'50%';
+    justify-content:'flex-end';
+  }
+
+  .navLink:hover {
+    text-decoration: underline;
+  }
+
+  .donateButton {
+    color:white;
+    background-color:rgb(238,113,98);
+    border:none;
+    border-radius: 8px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding: 20px;
+    margin-top: 70px;
+  
+  }
+
+  .desktopNavWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 250%;
+  }
+
+  .subTitle {
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 150%;
+  }
+
+  .centerWrapper {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .image img {
+    max-width: 70%;
+  }
+
+  .faqContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-right: 0px;
+  }
+
+  .faq {
+    width: 75%;
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .faqQuestion {
+    position: relative;
+    font-size: 20px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    transition: all 0.4s sease;
+  }
+
+  .faqOpen {
+    margin-bottom: 15px;
+    max-height: 1000px;
+    opacity: 1;
+    content: "-";
+  }
+
+  .faqClosed {
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.4s ease;
+    content: "\f068";
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 24%;
+    padding: 0 4px;
+  }
+
+  .storyColumn {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+  }
+
+  .column div {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .weddingPartyContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    line-height: 150%;
+  }
+  /* 
+  .weddingPartyContainer2 {
+    padding: 20px;
+    line-height: 150%;
+  } */
+
+  .weddingPartyColumn {
+    background-color: #ffffff;
+    width: 50%;
+  }
+
+  .weddingParty {
+    padding: 20px;
+    line-height: 150%;
+  }
+
+  .dropDown {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+    background-color: rgb(27, 34, 55);
+  }
+
+  .dropButton {
+    color: rgb(230, 230, 230);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+  }
+
+  .dropDownContent {
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(27, 34, 55, 0.2);
+    z-index: 1;
+  }
+
+  .dropDownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropDownContent a:hover {
+    background-color: #ddd;
+  }
+
+  .dropDown:hover .dropDownContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .donateButton {
+    color:white;
+    background-color:rgb(238,113,98);
+    border: none;
+    border-radius: 4px;
+    padding-right:50px;
+    padding-left:50px;
+
+  }
+
+.headerLeft {
+  width:30%;
+}
+
+.headerRight {
+  width:20%;
+  padding:inherit;
+}
+
+.sponsors {
+  /* border:1px solid black; */
+  position: relative;
+  height:75px;
+}
+
+}
