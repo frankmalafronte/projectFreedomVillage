@@ -96,7 +96,9 @@ body {
   overflow: hidden;
   outline: none;
   padding: 16px; 
-  margin-top: 20px;
+  margin-top:5px;
+  margin-bottom:5px
+
 }
 
 .eventDetails{
@@ -104,13 +106,12 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-    width: 100%;
-  margin-bottom:5%;
-  font-size:14pt;
+  width: 100%;
+  margin-bottom:3%;
 }
 
 .village {
-  font-size:5vw;
+  font-size:6vw;
     text-align: right;
     color: white;
     position: absolute;
@@ -118,15 +119,21 @@ body {
     right: 3%;
 }
 .mission {
-    font-size:3.5vw;
+    font-size:4vw;
     margin-top:5%; 
     color: rgb(0,53,145);
     width:75%
 }
 .subMission {
   font-weight:900;
-  font-size:2.8vw;
+  font-size:4vw;
   color: rgb(220,41,49);
+  margin-bottom: 5%
+}
+.donateButtonContainer {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logoMobile {
@@ -196,15 +203,6 @@ h3 {
 
 
 
-.racebrookPic{
-  height:0;
-opacity: 0;
-width:0px
-}
-.racebrookButton {
-  color: teal
-}
-
 .eventTitle{
   padding-top:10px;
    padding-bottom:20px; 
@@ -264,23 +262,8 @@ width:0px
   .subDetail{
     font-size:20px
   }
-  .racebrookButton{
-    padding-left: 20px;
-    font-size:30px;
-    color:#3c2415;
-  }
+ 
 
-  .racebrookButton:hover {
-    text-decoration: underline;
-  }
-
-  h2 {
-    font-size: 24pt;
-  }
-
-  .logo {
-    width: 225px;
-  }
 
   .heroTop {
     font-size: 70pt;
@@ -346,7 +329,7 @@ width:0px
     text-decoration: underline;
   }
 
-  .donateButton {
+  .donateButton{
     color:white;
     background-color:rgb(220,41,49);
     border:none;
@@ -361,7 +344,9 @@ width:0px
     outline: none;
     padding: 20px;
     margin-top: 70px;
-  
+  }
+  .donateButtonContainer{ 
+    display:block;
   }
 
   .desktopNavWrapper{

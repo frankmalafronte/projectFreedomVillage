@@ -79,7 +79,7 @@ export default function Home(props) {
         <div className={styles.subMission}>
         Now its time we serve them
         </div>
-        <div  >
+        <div className={styles.donateButtonContainer}>
         <MdMilitaryTech style= {{verticalAlign:'middle'}} color="rgb(0,53,145)" size="50px" />
         <Link to ="https://app.fluidpay.com/checkout/3510f13d-ea57-410e-aa7c-2c1f43a2e399"><button className={styles.donateButton}>
            Support Homes for our Veterans 
@@ -88,7 +88,7 @@ export default function Home(props) {
             </div>
             <br/>
         </div>
-        <div  style = {{display:'flex'}}>
+        <div  style = {{display:'flex',marginBottom:'2%'}}>
         <Img style = {{width:'50%'}} fluid= {data.homeLayout.childImageSharp.fluid}/>
         <Img style = {{width:'50%'}}fluid = {data.homeOutside.childImageSharp.fluid} />
         {/* <Img style = {{width:'30%'}}fluid = {data.greenhouse.childImageSharp.fluid} /> */}
@@ -96,7 +96,7 @@ export default function Home(props) {
         <div style={{display:'flex',justifyContent:'center',color:'rgb(220,41,49)', fontSize:'2.8vw'}}>
         Sponsored By:
         </div>
-        <div className ={styles.eventContainer}>
+        <div className ={styles.eventContainer} style = {{}}>
         <Img fluid = {data.horizontal.childImageSharp.fluid} />
         </div>
         </div>
