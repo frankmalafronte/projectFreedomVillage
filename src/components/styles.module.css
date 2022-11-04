@@ -87,7 +87,7 @@ body {
 .donateButton {
   color:white;
   font-weight:bold;
-  background-color:rgb(238,113,98);
+  background-color:rgb(220,41,49);
   border:none;
   border-radius: 8px;
   font-size: 20px;
@@ -99,34 +99,38 @@ body {
   margin-top: 20px;
 }
 
-.title {
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  font-size: 125%;
-}
-.subTitle {
-  text-align: center;
+.eventDetails{
+  display: flex;
   flex-direction: column;
-  padding: 2px;
-  margin: 2px;
-  font-size: 110%;
+  align-items: center;
+  text-align: center;
+    width: 100%;
+  margin-bottom:10%;
+  font-size:14pt;
+}
+
+.village {
+  font-size:5vw;
+    text-align: right;
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+}
+.mission {
+    font-size:3.5vw;
+    margin-top:5%; 
+    color: rgb(0,53,145);
+    width:75%
+}
+.subMission {
+  font-weight:900;
+  font-size:2.8vw;
+  color: rgb(220,41,49);
 }
 
 .logoMobile {
   width: 220px;
-}
-
-.heroTop {
-  font-size: 25pt;
-  /* display: flex;*/
-  /* padding-right: 5%; */
-  text-align: right;
-  color: white;
-  position: absolute;
-  text-shadow: 2px 2px 10px  #414141;
-  bottom: 5%;
-  right: 5%;
 }
 
 .center {
@@ -190,13 +194,7 @@ h3 {
   flex-direction: column;
 }
 
-.eventDetails{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-bottom:10%;
-  font-size:14pt;
-}
+
 
 .racebrookPic{
   height:0;
@@ -294,10 +292,8 @@ width:0px
     top:40px;
     top:5%
   }
-  .heroTop2 {
+  .village {
     font-size:5vw;
-    /* display: flex;
-    padding-top: 10px; */
     text-align: right;
     color: white;
     position: absolute;
