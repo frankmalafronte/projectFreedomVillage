@@ -61,10 +61,10 @@ export default function Home(props) {
   return (
     <body>
         <div className ={styles.eventContainer}>
-        <div  className ={styles.eventDetails}>
         <BackgroundImage style ={{width:'100%', height:'60vh'}}fluid = {data.uniform.childImageSharp.fluid}>
         <div className={styles.heroTop2}>Project Freedom Village</div>
         </BackgroundImage>
+        <div  className ={styles.eventDetails}>
       <div className={styles.mission}>
       We The People, Combating Veteran's Homelessness, Hunger, and Job&nbsp;Insecurity
          </div>
@@ -87,12 +87,15 @@ export default function Home(props) {
           </button></Link>
             </div>
         </div>
-        <div  style = {{display:'flex'}}>
+        {/* <div  style = {{display:'flex'}}>
         <Img style = {{width:'33%'}} fluid= {data.homeLayout.childImageSharp.fluid}/>
         <Img style = {{width:'33%'}}fluid = {data.homeOutside.childImageSharp.fluid} />
         <Img style = {{width:'33%'}}fluid = {data.greenhouse.childImageSharp.fluid} />
+        </div> */}
+        <div style = {{display:'flex',justifyContent:'center'}}>
+        <Img  style = {{width:'66%'}}fluid = {data.flier.childImageSharp.fluid} />
+
         </div>
-        <Img style = {{width:'100%'}}fluid = {data.flier.childImageSharp.fluid} />
         </div>
         <Footer/>
       </body>

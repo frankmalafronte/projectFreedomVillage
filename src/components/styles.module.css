@@ -196,7 +196,7 @@ h3 {
   flex-direction: column;
   text-align: center;
   margin-bottom:10%;
-  font-size:14pt
+  font-size:14pt;
 }
 
 .racebrookPic{
@@ -251,7 +251,8 @@ width:0px
     font-weight:900;
     font-size:6vh;
     margin-top:5%; 
-    color: rgb(0,53,145)
+    color: rgb(0,53,145);
+    width:66%
   }
   .subMission {
     font-weight:900;
