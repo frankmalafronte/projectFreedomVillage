@@ -56,6 +56,13 @@ export default function Home(props) {
                 }
                 }
               }
+              solar: file(relativePath: { eq: "solar.jpg" }) {
+                childImageSharp {
+                  fluid(maxWidth:800 maxHeight:800 fit:INSIDE cropFocus:CENTER ) {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                  }
+                }
     }`);
 
   return (
@@ -97,6 +104,7 @@ export default function Home(props) {
         Sponsored By:
         </div>
         <div className ={styles.eventContainer} style = {{}}>
+        <Img fluid = {data.solar.childImageSharp.fluid}/>
         <Img fluid = {data.horizontal.childImageSharp.fluid} />
         </div>
         </div>
