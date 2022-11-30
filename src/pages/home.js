@@ -95,11 +95,11 @@ export default function Home(props) {
             </div>
             <br/>
         </div>
-        <div  style = {{display:'flex',marginBottom:'2%'}}>
-        <Img style = {{width:'50%'}} fluid= {data.homeLayout.childImageSharp.fluid}/>
-        <Img style = {{width:'50%'}}fluid = {data.homeOutside.childImageSharp.fluid} />
+        {/* <div  style = {{display:'flex',marginBottom:'2%'}}> */}
+        {/* <Img style = {{width:'50%'}} fluid= {data.homeLayout.childImageSharp.fluid}/>
+        <Img style = {{width:'50%'}}fluid = {data.homeOutside.childImageSharp.fluid} /> */}
         {/* <Img style = {{width:'30%'}}fluid = {data.greenhouse.childImageSharp.fluid} /> */}
-        </div>
+        {/* </div> */}
         <div style={{display:'flex',justifyContent:'center',color:'rgb(220,41,49)', fontSize:'2.8vw'}}>
         Sponsored By:
         </div>
