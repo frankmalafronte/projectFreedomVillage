@@ -6,6 +6,7 @@ import {Link} from 'gatsby';
 import Footer from '../components/Footer'
 import BackgroundImage from 'gatsby-background-image'
 import {MdMilitaryTech} from 'react-icons/md'
+import Links from '../components/Links';
 
 
 
@@ -67,6 +68,7 @@ export default function Home(props) {
 
   return (
     <body>
+          <Links/>
         <div className ={styles.eventContainer}>
         <BackgroundImage style ={{width:'100%', height:'40vh'}}fluid = {data.uniform.childImageSharp.fluid}>
         <div className={styles.village}>Project Freedom Villages</div>

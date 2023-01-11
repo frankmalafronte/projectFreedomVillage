@@ -2,28 +2,33 @@ import {Link} from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styles from '../components/styles.module.css';
+import {
+  FaFacebook,
+  FaInstagram,
+  FaPaypal
+} from 'react-icons/fa'
 
-
-
-//Room to grow later 
 export default function Links({children}) {
   return (
     <div>
-      <div id= "header" className={styles.nav} >
-        <div id= "header-left" className ={styles.headerLeft}>
-        {/* <img src ={LogoM} className ={styles.logo}/> */}
-        </div>
-          <div  className ={styles.desktopNavWrapper}>
-            <div id = "header-center" className ={styles.navLinks}>
-            </div>
-            <div id= "header-right" className ={styles.headerRight}>
-              <Link to ="https://tournamentfortheboy.square.site"><button className={styles.navButton}>Participate</button> </Link>
-            </div>
-          </div>
-      </div>
+      <div className={styles.nav} >
 
+      <Link to="/"><button className={styles.navLink}>Who We Are</button></Link>
+
+        <div className={styles.dropDown}>
+        <Link to ="/"><button className={styles.dropButton}>Locations</button></Link>
+          <div className ={styles.dropDownContent} id="dropDownContainer">
+          <Link to = "/AmericanLegion">American Legion - New Jersey</Link>
+          <Link to = "/EriePA">Erie Sports Center - Erie Pensylvania </Link>
+          </div>
+        </div>
+
+    <a href="https://www.instagram.com/projectfreedomvillages/?hl=en">
+    <FaInstagram  size="4vh" color="rgb(230, 230, 230)" />
+     </a>
+      </div>
       <div>
-            {children}
+        {children}
       </div>
     </div>);
 }
