@@ -21,7 +21,10 @@ export default function Links({children}) {
           <Link to = "/AmericanLegion">American Legion - New Jersey</Link>
           <Link to = "/EriePA">Erie Sports Center - Erie Pensylvania </Link> 
           </div>
-        </div>
+          </div>
+          <Link to ="https://secure2.procharge.com/YouPay/View/Youpay.dll?p=2//lVvI7uT/0qeCZDyCLrnHpCE0JfqkYreQ7bwKap2o=&z=UrK32WfLnJUyA8XRcIumcfFNnrVyZVBe9qkk5cfhVTY=&a="><button className={styles.navLink}>
+          Donate
+          </button></Link>
     {/* <a href="https://www.instagram.com/projectfreedomvillages/?hl=en">
     <FaInstagram  size="4vh" color="rgb(230, 230, 230)" />
      </a> */}
