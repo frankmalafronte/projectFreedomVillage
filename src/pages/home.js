@@ -57,7 +57,7 @@ export default function Home(props) {
                 }
                 }
               }
-              solar: file(relativePath: { eq: "solar.jpg" }) {
+              jobLot: file(relativePath: { eq: "jobLot.png" }) {
                 childImageSharp {
                   fluid(maxWidth:800 maxHeight:800 fit:INSIDE cropFocus:CENTER ) {
                     ...GatsbyImageSharpFluid_withWebp
@@ -97,14 +97,21 @@ export default function Home(props) {
             </div>
         </BackgroundImage>
             <br/>
-            <div className={styles.whoWeAreContainer}>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <div className ={styles.whoWeAreTitle}>Who we are </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <div className = {styles.whoWeAreContent}>
-            There are 60,000 homeless veterans in America today. 
-            Project Freedom Villages works to house, clothe, and provide employment for these veterans.
-             We build sustainable communities of tiny homes and green houses where they can live and work amongst their peers as they did when they served. 
+            There are 60,000 homeless veterans in America today. <br/>
+            Project Freedom Villages works to house, clothe, and provide employment for these veterans.  <br/>
+             We build sustainable communities of tiny homes and green houses where they can live and work amongst their peers as they did when they served.
              </div>
-            </div>
+             <br/>
             </div>
         {/* </div> */}
         {/* <div  style = {{display:'flex',marginBottom:'2%'}}> */}
@@ -116,7 +123,7 @@ export default function Home(props) {
         Sponsored By:
         </div>
         <div className ={styles.eventContainer} style = {{}}>
-        <Img fluid = {data.solar.childImageSharp.fluid}/>
+        <Img fluid = {data.jobLot.childImageSharp.fluid}/>
         <Img fluid = {data.horizontal.childImageSharp.fluid} />
         </div>
         {/* <Footer/> */}

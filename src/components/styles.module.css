@@ -20,7 +20,6 @@ body {
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -285,10 +284,28 @@ h3 {
     height:10vh;
     padding-top: 0px;
     padding-bottom: 0px;
-    background-color:#003161;
-    
+    background-color:#F6F5F5;
   }
 
+  .navLink {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #003161;
+    background-color:#F6F5F5;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+  }
+
+.navLinks{
+  display:flex;
+  flex-direction: row;
+  width:'50%';
+  justify-content:'flex-end';
+}
   .eventDetails {
     display: flex;
     flex-direction: column;
@@ -322,7 +339,7 @@ h3 {
     display: flex;
     flex-direction: column;
     height:40%;
-    
+    background-color:#F6F5F5;
   }
 
   .village {
@@ -391,9 +408,14 @@ h3 {
     text-align: center;
     font-size:4vw;
   }
-  .whoWeAreContent {
+  .whoWeAreContent{
+    margin: 0 auto;
     text-align: center;
-    font-size:3vw
+    font-size:2vw;
+    width:88%;
+    max-width:55ch;
+    line-height: 1.7;
+    padding-bottom: 10%
   }
 
   .heroBottom {
@@ -406,25 +428,7 @@ h3 {
 
   
 
-  .navLink {
-      font-size: 20px;
-      padding-left: 10px;
-      padding-right: 10px;
-      color: rgb(230, 230, 230);
-      background-color:#003161;
-      background-repeat: no-repeat;
-      border: none;
-      cursor: pointer;
-      overflow: hidden;
-      outline: none;
-    }
-  
-  .navLinks{
-    display:flex;
-    flex-direction: row;
-    width:'50%';
-    justify-content:'flex-end';
-  }
+
 
   .navLink:hover {
     text-decoration: underline;
@@ -510,12 +514,12 @@ h3 {
     position: relative;
     display: inline-block;
     font-size: 20px;
-    color: rgb(230, 230, 230);
-    background-color:#003161;
+    color: #003161;
+    background-color:#F6F5F5;
   }
 
   .dropButton {
-    color: rgb(230, 230, 230);
+    color:#003161;
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;

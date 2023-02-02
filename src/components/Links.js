@@ -11,9 +11,10 @@ import {
 export default function Links({children}) {
   return (
     <div>
+      
       <div className={styles.nav} >
-      <div>Project Freedom Villages</div>
-      <Link to="/"><button className={styles.navLink}>Who We Are</button></Link>
+      <div  style={{display:'flex', width:'40%',color:'#003161', fontSize:'2.8vw'}}>Project Freedom Vilages</div>
+      <Link to="/"><button className={styles.navLink}>Home</button></Link>
         <div className={styles.dropDown}>
         <Link to ="/"><button className={styles.dropButton}>Events</button></Link>
           <div className ={styles.dropDownContent} id="dropDownContainer">
@@ -21,7 +22,6 @@ export default function Links({children}) {
           <Link to = "/EriePA">Erie Sports Center - Erie Pensylvania </Link> 
           </div>
         </div>
-
     {/* <a href="https://www.instagram.com/projectfreedomvillages/?hl=en">
     <FaInstagram  size="4vh" color="rgb(230, 230, 230)" />
      </a> */}
