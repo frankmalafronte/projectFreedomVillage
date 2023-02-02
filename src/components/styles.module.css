@@ -165,6 +165,7 @@ body {
     bottom: 5%;
     right: 3%;
 }
+
 .mission {
     font-weight:900;
     font-size:4.5vw;
@@ -273,10 +274,7 @@ h3 {
     padding:20px;
   }
   
-  .eventContainer{
-    display: flex;
-    flex-direction: column;
-  }
+  
 
   .nav {
     display: flex;
@@ -297,18 +295,7 @@ h3 {
     align-items: center;
     width: 100%;
   }
-  .mission {
-    font-weight:900;
-    font-size:3.5vw;
-    margin-top:5%; 
-    color: rgb(0,53,145);
-    width:66%
-  }
-  .subMission {
-    font-weight:900;
-    font-size:2.8vw;
-    color: rgb(220,41,49);
-  }
+
 
   .detail{
     padding-left: 20px;
@@ -330,13 +317,83 @@ h3 {
     top:40px;
     top:5%
   }
+
+  .eventContainer{
+    display: flex;
+    flex-direction: column;
+    height:40%;
+    
+  }
+
   .village {
     font-size:5vw;
     text-align: right;
     color: white;
-    position: absolute;
-    bottom: 5%;
-    right: 3%;
+   
+  }
+
+  .backgroundPhoto{
+    
+  }
+
+  .missionContainer {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+  }
+  .missionLeftContainer{
+  width:50%;
+  }
+  .missionRightContainer {
+   display: flex;
+   width:50%;
+   align-items: flex-end;
+   flex-direction: column; 
+  }
+  .mission {
+    font-weight:900;
+    font-size:3.5vw;
+    margin-top:5%; 
+    color:rgba(255,255,255,1);
+    text-align: right;
+  }
+  .subMission {
+    font-weight:900;
+    font-size:2.8vw;
+    color:rgba(255,255,255,1);
+  }
+
+  .donateButton{
+    color:white;
+    background-color:rgb(220,41,49);
+    border:none;
+    border-radius: 16px;
+    font-size: 3vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding: 20px;
+    margin-top: 70px;
+  }
+  .donateButtonContainer{ 
+    display:flex;
+    margin-top: 0%;
+    size:3vw;
+    flex-direction: row-reverse;
+    margin-right: 10px;
+  }
+
+  .whoWeAreTitle{
+    text-align: center;
+    font-size:4vw;
+  }
+  .whoWeAreContent {
+    text-align: center;
+    font-size:3vw
   }
 
   .heroBottom {
@@ -373,27 +430,7 @@ h3 {
     text-decoration: underline;
   }
 
-  .donateButton{
-    color:white;
-    background-color:rgb(220,41,49);
-    border:none;
-    border-radius: 16px;
-    font-size: 3vw;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    padding: 20px;
-    margin-top: 70px;
-  }
-  .donateButtonContainer{ 
-    display:block;
-    margin-top: 0%;
-    size:3vw
-  }
+ 
 
   .desktopNavWrapper{
     display: flex;

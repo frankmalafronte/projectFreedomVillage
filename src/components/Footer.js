@@ -21,7 +21,7 @@ export default function Footer (){
     <a href="https://facebook.com/pg/BookwellTravel/posts/">
     <FaFacebook  className ={styles.footerIcons} size="50px" color="rgb(0,53,145)" />
     </a>    
-     {/* <a href="https://facebook.com/pg/BookwellTravel/posts/">
+     {/* <a href="https://facebook.com/pg/BookwellTravel/posts/">  
     <FaPaypal  className ={styles.footerIcons} size="50px" color="rgb(0,53,145)" />
     </a> */}
       </div>
