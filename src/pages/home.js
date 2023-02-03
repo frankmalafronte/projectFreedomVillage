@@ -14,21 +14,7 @@ import Links from '../components/Links';
 
 export default function Home(props) {
   const data = useStaticQuery(graphql`
-  query {
-    horizontal: file(relativePath: { eq: "sponsors/horizontal.png" }) {
-      childImageSharp {
-        fluid( maxWidth:3000 maxHeight:600 fit:FILL cropFocus:CENTER ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-        }
-      }
-      flag: file(relativePath: { eq: "flag.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth:300 maxHeight:300 fit:INSIDE cropFocus:CENTER ) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-          }
-        }
+  query {  
         uniform: file(relativePath: { eq: "uniform.jpg" }) {
           childImageSharp {
             fluid(maxWidth:1200 maxHeight:800 fit:FILL cropFocus:NORTH ) {
@@ -36,28 +22,7 @@ export default function Home(props) {
             }
             }
           }   
-      greenhouse: file(relativePath: { eq: "greenhouse.png" }) {
-        childImageSharp {
-          fluid(maxWidth:800 maxHeight:800 fit:COVER cropFocus:CENTER ) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-          }
-        }
-          homeLayout: file(relativePath: { eq: "homeLayout.png" }) {
-            childImageSharp {
-              fluid(maxWidth:1000 maxHeight:800 fit:FILL cropFocus:CENTER ) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-              }
-            }
-            homeOutside: file(relativePath: { eq: "homeOutside.png" }) {
-              childImageSharp {
-                fluid(maxWidth:800 maxHeight:800 fit:FILL cropFocus:CENTER ) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
-                }
-              }
-              solar: file(relativePath: { eq: "solar.jpg" }) {
+              sponsors: file(relativePath: { eq: "sponsorLogos.png" }) {
                 childImageSharp {
                   fluid(maxWidth:800 maxHeight:800 fit:INSIDE cropFocus:CENTER ) {
                     ...GatsbyImageSharpFluid_withWebp
@@ -89,11 +54,9 @@ export default function Home(props) {
         </div>
         </div>
         <div className={styles.donateButtonContainer}>
-        {/* <MdMilitaryTech style= {{verticalAlign:'middle'}} color="rgb(0,53,145)" size="50px" /> */}
         <Link to ="https://secure2.procharge.com/YouPay/View/Youpay.dll?p=2//lVvI7uT/0qeCZDyCLrnHpCE0JfqkYreQ7bwKap2o=&z=UrK32WfLnJUyA8XRcIumcfFNnrVyZVBe9qkk5cfhVTY=&a="><button className={styles.donateButton}>
           Support Us 
           </button></Link>
-          {/* <MdMilitaryTech style= {{verticalAlign:'middle'}} color="rgb(0,53,145)" size="50px"/> */}
             </div>
         </BackgroundImage>
             <div className ={styles.whoWeAreTitle}>Who we are </div>
@@ -104,18 +67,12 @@ export default function Home(props) {
              </div>
              <br/>
             </div>
-        {/* </div> */}
-        {/* <div  style = {{display:'flex',marginBottom:'2%'}}> */}
-        {/* <Img style = {{width:'50%'}} fluid= {data.homeLayout.childImageSharp.fluid}/>
-        <Img style = {{width:'50%'}}fluid = {data.homeOutside.childImageSharp.fluid} /> */}
-        {/* <Img style = {{width:'30%'}}fluid = {data.greenhouse.childImageSharp.fluid} /> */}
-        {/* </div> */}
+     
         <div style={{display:'flex',justifyContent:'center',color:'rgb(220,41,49)', fontSize:'2.8vw'}}>
         Sponsored By:
         </div>
         <div className ={styles.eventContainer} style = {{}}>
-        <Img fluid = {data.solar.childImageSharp.fluid}/>
-        <Img fluid = {data.horizontal.childImageSharp.fluid} />
+        <Img fluid = {data.sponsors.childImageSharp.fluid} />
         </div>
         {/* <Footer/> */}
       </body>
