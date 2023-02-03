@@ -57,7 +57,7 @@ export default function Home(props) {
                 }
                 }
               }
-              jobLot: file(relativePath: { eq: "jobLot.png" }) {
+              solar: file(relativePath: { eq: "solar.jpg" }) {
                 childImageSharp {
                   fluid(maxWidth:800 maxHeight:800 fit:INSIDE cropFocus:CENTER ) {
                     ...GatsbyImageSharpFluid_withWebp
@@ -96,16 +96,7 @@ export default function Home(props) {
           {/* <MdMilitaryTech style= {{verticalAlign:'middle'}} color="rgb(0,53,145)" size="50px"/> */}
             </div>
         </BackgroundImage>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <div className ={styles.whoWeAreTitle}>Who we are </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <div className = {styles.whoWeAreContent}>
             There are 60,000 homeless veterans in America today. <br/>
             Project Freedom Villages works to house, clothe, and provide employment for these veterans.  <br/>
@@ -123,7 +114,7 @@ export default function Home(props) {
         Sponsored By:
         </div>
         <div className ={styles.eventContainer} style = {{}}>
-        <Img fluid = {data.jobLot.childImageSharp.fluid}/>
+        <Img fluid = {data.solar.childImageSharp.fluid}/>
         <Img fluid = {data.horizontal.childImageSharp.fluid} />
         </div>
         {/* <Footer/> */}
