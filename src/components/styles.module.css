@@ -20,27 +20,34 @@ body {
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
   z-index: 100;
-  background-color:#003161;
+  background-color:#F6F5F5;
 }
 
 .navLink {
   font-size: 14px;
   padding-left: 10px;
   padding-right: 10px;
-  color: rgb(230, 230, 230);
-  background-color:#003161;
+  color: #003161;
+  background-color:#F6F5F5;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
   overflow: hidden;
   outline: none;
+}
+
+.companyName {
+  display:flex;
+   width:40%;
+   color:#003161;
+   font-size:100px;
 }
 
 .navLink:hover {
@@ -60,11 +67,11 @@ body {
   position: relative;
   display: inline-block;
   font-size: 14px;
-  color: rgb(230, 230, 230);
-  background-color:#003161;
+  color:#003161;
+  background-color:#F6F5F5;
 }
 .dropButton {
-  color: rgb(230, 230, 230);
+  color: #003161;
   font-size: 14px;
   padding-left: 10px;
   padding-right: 10px;
@@ -165,28 +172,61 @@ body {
     bottom: 5%;
     right: 3%;
 }
+
 .mission {
     font-weight:900;
     font-size:4.5vw;
     margin-top:5%; 
-    color: #003161;
-    width:75%
+    color: rgba(255,255,255,1);
+    text-align: right;
 }
 .subMission {
   font-weight:900;
   font-size:4.2vw;
-  color: rgb(220,41,49);
-  margin-bottom: 5%
-}
-.donateButtonContainer {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+  color: rgba(255,255,255,1);
+  margin-bottom: 5%;
+  text-align: right;
 }
 
-.logoMobile {
-  width: 220px;
+.missionContainer {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
 }
+.missionLeftContainer{
+width:50%;
+}
+.missionRightContainer {
+ display: flex;
+ width:50%;
+ align-items: flex-end;
+ flex-direction: column; 
+}
+
+.donateButtonContainer {
+  display:flex;
+  margin-top: 0%;
+  size:3vw;
+  flex-direction: row-reverse;
+  margin-right: 10px;
+}
+
+.whoWeAreTitle{
+  text-align: center;
+  font-size: 6vw;
+  margin:25px;
+}
+
+.whoWeAreContent{
+  margin: 0 auto;
+  text-align: center;
+  font-size:3vw;
+  width:88%;
+  max-width:55ch;
+  line-height: 1.7;
+  padding-bottom: 5%
+}
+
 
 .center {
   display: flex;
@@ -249,34 +289,9 @@ h3 {
 }
 
 
-
-.eventTitle{
-  padding-top:10px;
-   padding-bottom:20px; 
-   font-weight:900;
-   font-size:150%;
-}
-
-.detail{
-  font-size:18px;
-}
-.subDetail{
-  font-size:14px
-}
-
-
-
 /* Large devices (laptops/desktops, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-  #bio {
-    padding:20px;
-  }
-  
-  .eventContainer{
-    display: flex;
-    flex-direction: column;
-  }
 
   .nav {
     display: flex;
@@ -287,28 +302,34 @@ h3 {
     height:10vh;
     padding-top: 0px;
     padding-bottom: 0px;
-    background-color:#003161;
-    
+    background-color:#F6F5F5;
+  }
+.companyName {
+  display:flex;
+   width:40%;
+   color:#003161;
+   font-size:2.8vw;
+}
+ 
+  .navLink {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #003161;
+    background-color:#F6F5F5;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
   }
 
-  .eventDetails {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .mission {
-    font-weight:900;
-    font-size:3.5vw;
-    margin-top:5%; 
-    color: rgb(0,53,145);
-    width:66%
-  }
-  .subMission {
-    font-weight:900;
-    font-size:2.8vw;
-    color: rgb(220,41,49);
-  }
+.navLinks{
+  display:flex;
+  flex-direction: row;
+  width:'50%';
+  justify-content:'flex-end';
+}
 
   .detail{
     padding-left: 20px;
@@ -318,59 +339,38 @@ h3 {
     font-size:20px
   }
  
-
-
-  .heroTop {
-    font-size: 70pt;
-    /* display: flex;
-    padding-top: 10px; */
-    text-align: center;
-    color: white;
-    position: relative;
-    top:40px;
-    top:5%
-  }
-  .village {
-    font-size:5vw;
-    text-align: right;
-    color: white;
-    position: absolute;
-    bottom: 5%;
-    right: 3%;
-  }
-
-  .heroBottom {
-    font-size: 25pt;
+  .eventContainer{
     display: flex;
-    justify-content: center;
-    padding-bottom: 40px;
-    padding-top:15px;
+    flex-direction: column;
+    height:40%;
+    background-color:#F6F5F5;
   }
 
-  
-
-  .navLink {
-      font-size: 20px;
-      padding-left: 10px;
-      padding-right: 10px;
-      color: rgb(230, 230, 230);
-      background-color:#003161;
-      background-repeat: no-repeat;
-      border: none;
-      cursor: pointer;
-      overflow: hidden;
-      outline: none;
-    }
-  
-  .navLinks{
-    display:flex;
+  .missionContainer {
+    display: flex;
     flex-direction: row;
-    width:'50%';
-    justify-content:'flex-end';
+    margin-right: 10px;
   }
-
-  .navLink:hover {
-    text-decoration: underline;
+  .missionLeftContainer{
+  width:50%;
+  }
+  .missionRightContainer {
+   display: flex;
+   width:50%;
+   align-items: flex-end;
+   flex-direction: column; 
+  }
+  .mission {
+    font-weight:900;
+    font-size:3.5vw;
+    margin-top:5%; 
+    color:rgba(255,255,255,1);
+    text-align: right;
+  }
+  .subMission {
+    font-weight:900;
+    font-size:2.8vw;
+    color:rgba(255,255,255,1);
   }
 
   .donateButton{
@@ -388,12 +388,46 @@ h3 {
     outline: none;
     padding: 20px;
     margin-top: 70px;
+    margin-bottom: 10px;
   }
   .donateButtonContainer{ 
-    display:block;
+    display:flex;
     margin-top: 0%;
-    size:3vw
+    size:3vw;
+    flex-direction: row-reverse;
+    margin-right: 10px;
   }
+
+  .whoWeAreTitle{
+    text-align: center;
+    font-size:4vw;
+  }
+  .whoWeAreContent{
+    margin: 0 auto;
+    text-align: center;
+    font-size:2vw;
+    width:88%;
+    max-width:55ch;
+    line-height: 1.7;
+    padding-bottom: 10%
+  }
+
+  .heroBottom {
+    font-size: 25pt;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-top:15px;
+  }
+
+  
+
+
+
+  .navLink:hover {
+    text-decoration: underline;
+  }
+
 
   .desktopNavWrapper{
     display: flex;
@@ -447,38 +481,17 @@ h3 {
     width: 100%;
   }
 
-  .weddingPartyContainer {
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    line-height: 150%;
-  }
-  /* 
-  .weddingPartyContainer2 {
-    padding: 20px;
-    line-height: 150%;
-  } */
-
-  .weddingPartyColumn {
-    background-color: #ffffff;
-    width: 50%;
-  }
-
-  .weddingParty {
-    padding: 20px;
-    line-height: 150%;
-  }
 
   .dropDown {
     position: relative;
     display: inline-block;
     font-size: 20px;
-    color: rgb(230, 230, 230);
-    background-color:#003161;
+    color: #003161;
+    background-color:#F6F5F5;
   }
 
   .dropButton {
-    color: rgb(230, 230, 230);
+    color:#003161;
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;
