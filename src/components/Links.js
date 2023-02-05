@@ -13,7 +13,7 @@ export default function Links({children}) {
     <div>
       
       <div className={styles.nav} >
-      <div  style={{display:'flex', width:'40%',color:'#003161', fontSize:'2.8vw'}}>Project Freedom Vilages</div>
+      <div  style={{display:'flex', width:'40%',color:'#003161', fontSize:'2.8vw'}}>Project Freedom Villages</div>
       <Link to="/"><button className={styles.navLink}>Home</button></Link>
         <div className={styles.dropDown}>
         <Link to ="/"><button className={styles.dropButton}>Events</button></Link>

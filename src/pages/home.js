@@ -49,7 +49,7 @@ export default function Home(props) {
         </div>
         <br/>
         <div className={styles.subMission}>
-        Now its time we serve them
+        Now it's time we serve them
         </div>
         </div>
         </div>
@@ -63,7 +63,7 @@ export default function Home(props) {
             <div className = {styles.whoWeAreContent}>
             There are 60,000 homeless veterans in America today. <br/>
             Project Freedom Villages works to house, clothe, and provide employment for these veterans.  <br/>
-             We build sustainable communities of tiny homes and green houses where they can live and work amongst their peers as they did when they served.
+             We build sustainable communities of tiny homes and greenhouses where they can live and work amongst their peers as they did when they served.
              </div>
              <br/>
             </div>
