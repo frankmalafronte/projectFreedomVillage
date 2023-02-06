@@ -32,6 +32,8 @@ export default function Home(props) {
     }`);
 
   return (
+    <div>
+    <title>Project Freedom Villages</title>
     <body>
           <Links/>
         <div className ={styles.eventContainer}>
@@ -76,5 +78,6 @@ export default function Home(props) {
         </div>
         {/* <Footer/> */}
       </body>
+      </div>
   );
 }

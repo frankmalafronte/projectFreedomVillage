@@ -24,6 +24,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.6.0",
     "react-image-lightbox": "^5.1.1",
+    "react-social-media-embed": "^2.3.4",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
