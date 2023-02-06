@@ -213,14 +213,14 @@ width:50%;
 
 .whoWeAreTitle{
   text-align: center;
-  font-size: 6vw;
+  font-size:8vw;
   margin:25px;
 }
 
 .whoWeAreContent{
   margin: 0 auto;
   text-align: center;
-  font-size:3vw;
+  font-size:4.5vw;
   width:88%;
   max-width:55ch;
   line-height: 1.7;
