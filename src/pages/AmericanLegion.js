@@ -10,6 +10,7 @@ export default function AmericanLegion(props) {
 
 return (
   <Links>
+    <title>Project Freedom Villages</title>
   <body>
   <div style={{ display: 'flex', alignItems: 'center', flexDirection:'column' }}>
   <InstagramEmbed url="https://www.instagram.com/p/CoYp0mDO8Rb/" width={'75%'} />
