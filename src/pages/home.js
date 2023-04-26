@@ -55,10 +55,15 @@ export default function Home(props) {
         </div>
         </div>
         </div>
+        <div className = {styles.bottomRow}>
+        <div className={styles.twoCents}>
+         Here is my 2 cents
+         </div>
         <div className={styles.donateButtonContainer}>
         <Link to ="https://secure2.procharge.com/YouPay/View/Youpay.dll?p=2//lVvI7uT/0qeCZDyCLrnHpCE0JfqkYreQ7bwKap2o=&z=UrK32WfLnJUyA8XRcIumcfFNnrVyZVBe9qkk5cfhVTY=&a="><button className={styles.donateButton}>
           Support Us 
           </button></Link>
+            </div>
             </div>
         </BackgroundImage>
             <div className ={styles.whoWeAreTitle}>Who we are </div>

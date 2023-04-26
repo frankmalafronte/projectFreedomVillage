@@ -171,6 +171,20 @@ body {
   text-decoration: underline;
 }
 
+.bottomRow {
+  display: flex;
+  align-items:baseline
+}
+
+.donateButtonContainer {
+  display:flex;
+  margin-top: 0%;
+  size:3vw;
+  flex-direction: row-reverse;
+  margin-right: 10px;
+  width:40%
+}
+
 .donateButton {
   color:white;
   font-weight:bold;
@@ -185,7 +199,16 @@ body {
   padding: 16px; 
   margin-top:5px;
   margin-bottom:5px
+}
 
+
+.twoCents {
+  font-weight:900;
+  font-size:6vw;
+  color: rgba(255,255,255,1);
+  margin-bottom: 5%;
+  text-align: right;
+  width:60%
 }
 
 .eventDetails{
@@ -213,6 +236,8 @@ body {
     color: rgba(255,255,255,1);
     text-align: right;
 }
+
+
 .subMission {
   font-weight:900;
   font-size:4.2vw;
@@ -220,6 +245,7 @@ body {
   margin-bottom: 5%;
   text-align: right;
 }
+
 
 .missionContainer {
   display: flex;
@@ -236,13 +262,7 @@ width:50%;
  flex-direction: column; 
 }
 
-.donateButtonContainer {
-  display:flex;
-  margin-top: 0%;
-  size:3vw;
-  flex-direction: row-reverse;
-  margin-right: 10px;
-}
+
 
 .whoWeAreTitle{
   text-align: center;
@@ -449,6 +469,22 @@ h3 {
     color:rgba(255,255,255,1);
   }
 
+  .bottomRow {
+    display:flex;
+    flex-direction: row;
+    align-items: baseline
+  }
+
+
+  .twoCents {
+    font-weight:900;
+    font-size:5.0vw;
+    color:rgba(255,255,255,1);
+    text-align: right;
+    width:60%
+  }
+  
+
   .donateButton{
     color:white;
     background-color:rgb(220,41,49);
@@ -472,6 +508,7 @@ h3 {
     size:3vw;
     flex-direction: row-reverse;
     margin-right: 10px;
+    width:40%
   }
 
   .whoWeAreTitle{
