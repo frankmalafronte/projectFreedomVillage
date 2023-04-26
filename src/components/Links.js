@@ -25,13 +25,14 @@ export default function Links({children}) {
           <Link to ="https://secure2.procharge.com/YouPay/View/Youpay.dll?p=2//lVvI7uT/0qeCZDyCLrnHpCE0JfqkYreQ7bwKap2o=&z=UrK32WfLnJUyA8XRcIumcfFNnrVyZVBe9qkk5cfhVTY=&a="><button className={styles.navLink}>
           Donate
           </button></Link>
-    <a style ={{marginRight:'10px'}}href="https://www.instagram.com/projectfreedomvillages/?hl=en">
-    <FaInstagram  size="4vh" color="#003161"/>
+
+     <Link to="/Contact"><button className={styles.navLink}>Contact Us</button></Link>
+     <a style ={{marginRight:'10px'}}href="https://www.instagram.com/projectfreedomvillages/?hl=en">
+    <FaInstagram  size="3.8vh" color="#003161"/>
      </a>
      <a href="https://www.facebook.com/profile.php?id=100090050024302">
-    <FaFacebook  size="4vh" color="#003161" />
+    <FaFacebook  size="3.8vh" color="#003161" />
      </a>
-     <Link to="/Contact"><button className={styles.navLink}>Contact Us</button></Link>
       </div>
       <div>
         {children}
